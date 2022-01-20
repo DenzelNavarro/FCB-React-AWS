@@ -4,6 +4,17 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
+    function TaskList() {
+
+        return(
+            <ul>
+            <li className="tasks-item">Follow Edukasyon.ph on Facebook.</li>
+            <li className="tasks-item">Follow Aws Siklab Pilipinas Facebook.</li>
+            <li className="tasks-item">Follow Zuitt Coding Bootcamp on Facebook.</li>
+        </ul>
+        );
+    }
+
     function App() {
 
         const paraStyle = {
@@ -19,13 +30,7 @@ import "./index.css";
 
                     <h1>My Amazing ToDo-List App</h1>
                     <p style={paraStyle}>The most simple and amazing todo-list React app</p>
-
-                    <ul>
-                        <li className="tasks-item">Follow Edukasyon.ph on Facebook.</li>
-                        <li className="tasks-item">Follow Aws Siklab Pilipinas Facebook.</li>
-                        <li className="tasks-item">Follow Zuitt Coding Bootcamp on Facebook.</li>
-                    </ul>
-
+                    <TaskList />
                 </header>
 
             </div>
