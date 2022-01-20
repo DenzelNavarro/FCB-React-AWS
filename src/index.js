@@ -11,7 +11,7 @@ import "./index.css";
                 <header className="app-header">
 
                     <h1>My Amazing ToDo-List App</h1>
-                    <p>The most simple and amazing todo-list React App</p>
+                    <p>The most simple and amazing todo-list React app</p>
 
                 </header>
 
