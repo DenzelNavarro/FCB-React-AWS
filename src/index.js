@@ -4,39 +4,10 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
-    function Task(props) {
+import TasksList  from "./components/TasksList";
+   
 
-        //console.log(props);
-
-        return (
-            <li className="tasks-item">{props.taskName}</li>
-        );
-    }
-
-    function TaskList() {
-
-        const taskItemsList = [
-
-            "Follow Edukasyon.ph on Facebook",
-            "Follow AWS Siklab Pilipinas on Facebook",
-            "Follow Zuitt Coding Bootcamp on Facebook"
-
-        ];
-
-        return(
-            <div>
-                <input className="task-input"/>
-            <ul>
-                {taskItemsList.map((task, index) => {
-               
-                    return <Task key={index} taskName={task} />
-
-                })}
-            </ul>
-            </div>
-        );
-    }
-
+    
     function App() {
 
         const paraStyle = {
@@ -52,7 +23,7 @@ import "./index.css";
 
                     <h1>My Amazing ToDo-List App</h1>
                     <p style={paraStyle}>The most simple and amazing todo-list React app</p>
-                    <TaskList />
+                    <TasksList />
                 </header>
 
             </div>
