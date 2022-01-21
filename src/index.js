@@ -24,6 +24,8 @@ import "./index.css";
         ];
 
         return(
+            <div>
+                <input className="task-input"/>
             <ul>
                 {taskItemsList.map((task, index) => {
                
@@ -31,6 +33,7 @@ import "./index.css";
 
                 })}
             </ul>
+            </div>
         );
     }
 
